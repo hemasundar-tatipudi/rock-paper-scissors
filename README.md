@@ -1,20 +1,31 @@
-# Rock Paper Scissors (Console)
+# Roshambo (Rock Paper Scissors)
 
-A simple implementation of the classic **Rock Paper Scissors** game written in **JavaScript**, played entirely through the browser console.  
+A simple implementation of the classic **Rock Paper Scissors** game written in **JavaScript**. Initially built for the console, now updated with a **basic UI** so you can play directly in the browser.
+
+---
+
+## ✨ Live Demo
+👉 [Play Rock Paper Scissors](https://hemasundar-tatipudi.github.io/rock-paper-scissors/)
 
 ---
 
 ## 🎮 How to Play
-1. Open `index.html` in your web browser.
-2. Open the **Console** (Right-click → Inspect → Console).
-3. The game will automatically start.
-4. You’ll be prompted 5 times to enter your choice:
-   - `rock`
-   - `paper`
-   - `scissors`
-5. The computer will randomly select its choice each round.
-6. After each round, the winner and current score are displayed.
-7. At the end of 5 rounds, the overall winner is announced.
+1. Open [the live preview](https://hemasundar-tatipudi.github.io/rock-paper-scissors/).  
+2. Click one of the buttons:  
+   - ✊ **Rock**  
+   - ✋ **Paper**  
+   - ✌️ **Scissors**  
+3. The computer will randomly choose its move.  
+4. Scores are updated after each round.  
+5. First to reach 5 points wins!  
+6. At game over, a popup shows the result with an option to **Play Again**.
+
+---
+
+## 🛠 Built With
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=for-the-badge)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge)
 
 ---
 
@@ -23,20 +34,22 @@ A simple implementation of the classic **Rock Paper Scissors** game written in *
 
 rock-paper-scissors/
 │
-├── index.html      # HTML file linking external JavaScript
-├── js/
-│   └── script.js   # Game logic
-└── README.md       # Project documentation
+├── index.html    # Main HTML file
+├── script.js     # Game logic
+├── styles.css    # Styling for the game
+└── README.md     # Project documentation
 
 ````
 
 ---
 
 ## 🛠 Features
-- Plays 5 rounds against the computer.
-- Case-insensitive input (e.g., `ROCK`, `Rock`, `rock` all work).
-- Tracks and displays scores after each round.
-- Declares final winner at the end.
+- Interactive UI with buttons for Rock, Paper, Scissors.
+- Real-time score tracking.
+- Game ends when either player reaches 5 points.
+- Popup modal announces win/loss with a **Play Again** option.
+- Background color changes to **green** when you win, **red** when you lose.
+- Responsive design with dark theme and neon accent styling.
 
 ---
 
@@ -44,17 +57,24 @@ rock-paper-scissors/
 1. Clone this repo:
    ```bash
    git clone https://github.com/hemasundar-tatipudi/rock-paper-scissors.git
-    ```
+   ```
 
 2. Open `index.html` in your browser.
-3. Open the browser console and play!
+
+3. Start playing!
 
 ---
 
 ## 📚 Notes
 
-* This version is **console-only**.
-* GUI will be added in a later lesson.
-* The game assumes the player always enters a valid choice (`rock`, `paper`, or `scissors`).
+* Early versions of this project were **console-only**.
+* Current version includes a **basic graphical UI** built with HTML, CSS, and JavaScript.
+* No external libraries are used.
+
+---
+
+## 📖 Acknowledgment
+
+This project was built for practice as part of an **assignment in [The Odin Project](https://www.theodinproject.com/)** curriculum.
 
 ---

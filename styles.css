@@ -1,0 +1,139 @@
+* {
+  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #202124;
+}
+
+#head {
+  background-color: #121212;
+  color: #00FFE0;
+  font-size: 6vmin;
+  font-weight: 900;
+  padding: 5vh;
+  text-align: center;
+}
+
+#body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#round {
+  font-size: 5vmin;
+  font-weight: 600;
+}
+
+#scores {
+  display: flex;
+  font-size: 3vmin;
+  gap: 3vmin;
+}
+
+#option {
+  display: flex;
+  gap: 4vmin;
+}
+
+.choice {
+  background-color: #202124;
+  padding: 2vh 3vh;
+  font-size: 2.5vmin;
+  border: #00FFE0 1px solid;
+  border-radius: 5px;
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.choice:hover {
+  background: #2a2a2a;
+  cursor: pointer;
+}
+
+.choice:active{
+  transform: scale(0.85);
+  background-color: #1a1a1a;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/*pop up code starts here*/
+
+#popup {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,.6);
+  z-index: 9999;
+}
+
+#popup .popup-box {
+  width: min(60vmin, 90vw);
+  height: min(50vmin, 70vh);
+  background: #121212;
+  border: 2px solid #00FFE0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.45);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+
+  text-align: center;
+  padding: 3vh;
+}
+
+#popup h2 {
+  color: #00FFE0;
+  font-size: 3.5vmin;
+  margin: 0;
+}
+
+#popup p {
+  font-size: 2vmin;
+  margin: 0;
+}
+
+#popup button {
+  font-size: 2vmin;
+  background: #121212;
+  color: whitesmoke;
+  border: 2px solid #00FFE0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background .2s ease, transform .05s ease;
+}
+#popup button:hover  { background: #2a2a2a; cursor: pointer;}
+#popup button:active { transform: translateY(1px); }
+
+/* Win: green background */ 
+body.win { background-color: #0f3d0f; } 
+/* Lose: red background */ 
+body.loss { background-color: #3d0f0f; }
+
+
+/* Footer */
+#footer {
+  background-color: #121212;
+  color: #00FFE0;
+  text-align: center;
+  font-size: 1.8vmin;
+  padding: 2vh 0;
+  width: 100%;
+  margin-top: auto;
+  border-top: 1px solid #00FFE0;
+}
