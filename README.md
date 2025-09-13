@@ -5,12 +5,12 @@ A simple implementation of the classic **Rock Paper Scissors** game written in *
 ---
 
 ## ✨ Live Demo
-👉 [Play Rock Paper Scissors](https://hemasundar-tatipudi.github.io/rock-paper-scissors/)
+👉 [Play Rock Paper Scissors](https://hemasundar-tatipudi.github.io/roshambo/)
 
 ---
 
 ## 🎮 How to Play
-1. Open [the live preview](https://hemasundar-tatipudi.github.io/rock-paper-scissors/).  
+1. Open [the live preview](https://hemasundar-tatipudi.github.io/roshambo/).  
 2. Click one of the buttons:  
    - ✊ **Rock**  
    - ✋ **Paper**  
